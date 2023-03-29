@@ -1,3 +1,4 @@
 # GuideMalmo
 En guide till Malmö
-[ReadMeFile.txt](https://github.com/OGOliver/GuideMalmo/files/11101677/ReadMeFile.txt)
+[ReadMeFile.txt.pdf](https://github.com/OGOliver/GuideMalmo/files/11101869/ReadMeFile.txt.pdf)
+
