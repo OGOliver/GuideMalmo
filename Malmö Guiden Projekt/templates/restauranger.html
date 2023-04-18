@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Restauranger</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Malmö Guiden</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Kontakta oss</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Sök...">
+            </div>
+            <button type="submit" class="btn btn-default custom-button">Sök</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-right"><a href="#"><span class="glyphicon glyphicon-user"></span> Logga in</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Malmö Guiden</h1>
+      <h3>Upptäck Malmö med vår turistguide</h3>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="first_row">
+          <div class="col-sm-4">
+            <div class="Sevärdheter_Malmö">
+              <img src="../static/vollmers.webp">
+            </div>
+            <h2>Vollmers</h2>
+            <p>Vollmers restaurang i Malmö är en av de mest eftertraktade och populära restaurangerna i staden. Med sin moderna, skandinaviska matfilosofi och fokus på lokala råvaror har Vollmers blivit känd som en av de främsta gastronomiska destinationerna i Sverige. Här serveras utsökt mat av högsta kvalitet som är vackert presenterad på tallriken. Den eleganta och moderna inredningen skapar en avslappnad och inbjudande atmosfär som gör besöket till en minnesvärd upplevelse. Vollmers är utan tvekan ett måste för alla matälskare som besöker Malmö. </p>
+            <p><b>Pris: $$$$</b></p>
+            <p><b>Adress: Tegelgårdsgatan 5, 211 33 Malmö</b></p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://vollmers.nu/">Vollmers webbsida</a></p>
+          </div>
+          <div class="col-sm-4">
+            <div class="Boenden">
+              <img src="../static/sture.jpeg">
+            </div>
+            <h2>Sture</h2>
+            <p>Brasserie Sture är en av Malmös mest populära och välrenommerade restauranger, belägen i hjärtat av staden. Här kan besökare njuta av både klassiska och moderna svenska rätter, tillagade med färska och lokala ingredienser. Restaurangen har en elegant och mysig inredning, vilket skapar en avslappnad och inbjudande atmosfär. Personalen är vänlig och professionell, och ger varje gäst en personlig och minnesvärd upplevelse. Besökare kan förvänta sig en gastronomisk upplevelse utöver det vanliga på Sture Restaurang.</p>
+            <p><b>Pris: $$$$</b></p>
+            <p><b>Adress: Adelgatan 13, 211 22 Malmö</b></p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://www.sture1912.com/">Stures webbsida</a></p>
+          </div>
+          <div class="col-sm-4">
+            <div class="restaurang">
+              <img src="../static/lyran.jpg">
+            </div>
+            <h2>Lyran</h2>
+            <p>Lyran är en restaurang i Malmö vid möllan som är välkänd för sin innovativa matlagning och spännande smakkombinationer. Här får du en kulinarisk upplevelse utöver det vanliga och en chans att prova på mat som du sällan hittar någon annanstans. Restaurangen serverar en fast meny som ändras varje månad, vilket innebär att det alltid finns något nytt och spännande att upptäcka. Lyran har också en unik och avslappnad atmosfär, vilket gör det till en perfekt plats för en romantisk middag eller en trevlig kväll med vänner.</p>
+            <p><b>Pris: $$$</b></p>
+            <p><b>Adress: Simrishamnsgatan 36A, 214 35 Malmö</b></p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://www.lyranmatbar.se/">Lyrans webbsida</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="shopping">
+            <img src="../static/bloom_in_the_park.webp">
+          </div>
+          <h2>Bloom in the park</h2>
+          <p>Bloom in the park är en unik restaurangupplevelse som erbjuder sina gäster en högklassig matupplevelse i en vacker miljö. Restaurangen är belägen i en park i utkanten av centrala Malmö och omges av grönska och vatten. Menyn består av säsongens bästa råvaror som tillagas på ett innovativt sätt och kombineras med spännande smaker från olika delar av världen. Personalen är professionell och vänlig och ger en personlig touch till besöket. Förutom den utsökta maten kan gästerna också njuta av utsikten över parken och sjön. Bloom in the park är en perfekt plats för en romantisk middag eller för att fira en speciell tillfälle.</p>
+          <p><b>Pris: $$$$</b></p>
+          <p><b>Adress: Pildammsvägen 17, 214 66 Malmö</b></p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://bloominthepark.se/">Bloom in the parks webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="evenemang">
+            <img src="../static/laroche.jpg">
+          </div>
+          <h2>La Roche</h2>
+          <p>La Roche Tapas Bar är en mysig och autentisk spansk restaurang i hjärtat av Malmö vid gamla väster. Restaurangen är känd för sin välsmakande tapasmeny, där man kan välja bland olika små rätter som är perfekta att dela med vänner och familj vid både speciella tillfällen men även spontant. La Roche Tapas Bar erbjuder även ett brett utbud av spanska viner och cocktails, som kompletterar maten på ett utmärkt sätt. Atmosfären är avslappnad och trevlig, vilket gör att man lätt kan stanna kvar en stund och njuta av maten och drycken. En perfekt plats för en smakupplevelse av Spanien mitt i Malmö.</p>
+          <p><b>Pris: $$</b></p>
+          <p><b>Adress: Larochegatan 5, 211 34 Malmö</b></p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="http://www.laroche.se/">La Roches webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="uteliv">
+            <img src="../static/mandosteakhouse.jpg">
+          </div>
+          <h2>Mando Steakhouse</h2>
+          <p>Mando Steakhouse i Malmö är en modern och elegant restaurang som specialiserar sig på utsökt kött från lokala producenter. Här kan du njuta av noga utvalda biffar som är tillagade enligt dina önskemål och serveras med en mängd olika tillbehör för att skapa en unik smakupplevelse. Förutom kött finns det även fisk och vegetariska alternativ på menyn. Den eleganta atmosfären och den professionella personalen gör Mando Steakhouse till en minnesvärd plats att äta på när du besöker Malmö. Mando Steakhouse i Malmö är en idealisk plats för köttälskare. Upplev en autentisk smakupplevelse med högkvalitativa köttbitar.</p>
+          <p><b>Pris: $$</b></p>
+          <p><b>Adress: Skomakaregatan 4, 211 34 Malmö</b></p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://mandosteakhouse.com/en/">Mando steakhouse webbsida</a></p>
+          <br>
+        </div>
+        <div class="col-sm-4">
+          <div class="kultur">
+            <img src="../static/saltimportencanteen.webp">
+          </div>
+          <h2>Saltimporten Canteen</h2>
+          <p>Saltimporten Canteen är en unik lunchrestaurang belägen i en gammal salthall i Malmö. Här kan turister njuta av en utsökt meny som är fylld med lokala råvaror och spännande smaker. Menyn erbjuder ett brett utbud av rätter som är tillagade med färska och lokala ingredienser och som tar gästerna på en gastronomisk resa. Saltimporten Canteen är känd för sin höga kvalitet på maten och sin trevliga atmosfär.</p>
+          <p><b>Pris: $$</b></p>
+          <p><b>Adress: Grimsbygatan 24, 211 20 Malmö</b></p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.saltimporten.com/">Saltimportens webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="dolda_pärlor">
+            <img src="../static/kockeriet.jpg">
+          </div>
+          <h2>Kockeriet</h2>
+          <p>Kockeriet i Malmö är en prisbelönt restaurang som erbjuder en fantastisk matupplevelse. Här serveras en innovativ och kreativ meny med fokus på högkvalitativa, lokalt odlade råvaror. Restaurangen har en avslappnad atmosfär som ger en minnesvärd upplevelse för alla besökare. Med en imponerande vinlista och en hög servicenivå är Kockeriet ett måste för alla matälskare som besöker Malmö.</p>
+          <p><b>Pris: $$$</b></p>
+          <p><b>Adress: Norra Vallgatan 28, 211 25 Malmö</b></p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.kockeriet.se/">Kockeriets webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="sport">
+            <img src="../static/namu.jpg">
+          </div>
+          <h2>Namu</h2>
+          <p>Namu är en unik restaurang i Malmö som erbjuder en spännande blandning av koreanska och japanska smaker. Här kan du njuta av allt från sushi och tempura till bibimbap och koreanska BBQ-rätter, allt tillagat med färska och högkvalitativa råvaror. Interiören är modern och trendig, med en härlig atmosfär som passar både för romantiska middagar och trevliga kvällar med vänner.</p>
+          <p><b>Pris: $$$</b></p>
+          <p><b>Adress: Landbygatan 5, 211 34 Malmö</b></p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://namu.nu/">Namus webbsida</a></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p>© 2023 Malmö Guiden</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
