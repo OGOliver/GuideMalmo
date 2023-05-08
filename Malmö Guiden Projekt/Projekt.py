@@ -116,6 +116,10 @@ def dolda_parlor():
 def sport():
     return render_template('sport.html')
 
+@app.route('/kontakt')
+def kontakt():
+    return render_template('kontakt.html')
+
 if __name__ == '__main__':
     app.secret_key = 'mysecretkey'
     app.run(debug=True)
