@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kultur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Malmö Guiden</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Kontakta oss</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Sök...">
+            </div>
+            <button type="submit" class="btn btn-default custom-button">Sök</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-right"><a href="#"><span class="glyphicon glyphicon-user"></span> Logga in</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Malmö Guiden</h1>
+      <h3>Upptäck Malmö med vår turistguide</h3>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="first_row">
+          <div class="col-sm-4">
+            <div class="Sevärdheter_Malmö">
+              <img src="../static/opera.jpg">
+            </div>
+            <h2>Malmö Opera</h2>
+            <p>Malmö Opera är en operahus och konsertlokal belägen i Malmö, Sverige. Huset är känt för sin moderna arkitektur och innovativa scenkonst. Operahuset har en stor scen och rymmer upp till 1500 personer i publiken. Här erbjuds en blandning av klassiska operor, musikaler, baletter och konserter av hög kvalitet. Malmö Opera är också känd för att ha en framstående operaskola, där unga talanger tränas av professionella musiker och regissörer. Operahuset är en viktig kulturell institution i Malmö och bidrar till stadens kulturliv genom sitt stora utbud av konstnärliga evenemang och föreställningar.            </p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://www.malmoopera.se/">Malmö Operas webbsida</a></p>
+          </div>
+          <div class="col-sm-4">
+            <div class="Boenden">
+              <img src="../static/form och designcenter.jpg">
+            </div>
+            <h2>Form/Designcenter</h2>
+            <p>Form/Design Center i Malmö är en utställningslokal som är dedikerad till att visa upp design och formgivning. Här kan besökare se allt från industriell design och möbler till mode och grafisk design. Centret har också en butik där man kan köpa design- och konstprodukter från olika svenska designers. Form/Design Center har som mål att främja design som en viktig del av samhället och att öka medvetenheten om dess betydelse. Det anordnar också workshops, föreläsningar och evenemang som fokuserar på design och konst.            </p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://formdesigncenter.com/">Form/Designcenterts webbsida</a></p>
+          </div>
+          <div class="col-sm-4">
+            <div class="restaurang">
+              <img src="../static/konstmuseum.jpg">
+            </div>
+            <h2>Konstmuseet</h2>
+            <p>Konstmuseet Malmö är en konstutställningslokal som ligger i Malmö, Sverige. Museet är känt för att ha en stor samling av skandinavisk konst från det tidiga 1900-talet fram till nutid. Här finns verk av kända konstnärer som Anders Zorn, Edvard Munch, Isaac Grünewald, Olle Baertling och många fler. Konstmuseet Malmö har också en stor samling av samtida konst och arrangerar regelbundet utställningar med både svenska och internationella konstnärer. Museet är en populär destination för både lokala och internationella besökare som är intresserade av konst och kultur.            </p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://malmo.se/Uppleva-och-gora/Konst-och-museer/Malmo-Konstmuseum.html">Konstmuseets webbsida</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="shopping">
+            <img src="../static/konsthögskola.jpg">
+          </div>
+          <h2>Konsthögskolan</h2>
+          <p>Konsthögskolan i Malmö är en del av Lunds universitet och en av Sveriges främsta konstskolor. Skolan grundades ursprungligen 1857 och har sedan dess genomgått flera omorganisationer och förändringar. Idag erbjuder Konsthögskolan utbildningar på både grundnivå och avancerad nivå inom bildkonst, konsthantverk och design. Skolan har även ett flertal utställningar och evenemang öppna för allmänheten. Konsthögskolan i Malmö har ett internationellt rykte och har varit platsen för många framstående konstnärers utbildning och arbete genom åren.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.khm.lu.se/">Konsthögskolans webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="evenemang">
+            <img src="../static/jazzorkester.jpg">
+          </div>
+          <h2>Jazzorkestern</h2>
+          <p>Hothouse Jazz är en jazzorkester baserad i Malmö, Sverige. Orkestern grundades 1997 och består av professionella musiker och jazzlärare. Hothouse Jazz har en bred repertoar som spänner från traditionell jazz till moderna tolkningar, och de uppträder regelbundet på konserter och festivaler i Sverige och internationellt. Orkestern har även samarbetat med kända jazzmusiker som Joe Lovano, Peter Erskine och John Taylor. Hothouse Jazz är en viktig del av jazzscenen i Malmö och en uppskattad musikalisk institution i regionen.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://hothousejazz.se/">Jazzorkesterns webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="uteliv">
+            <img src="../static/skånesdansteater.jpg">
+          </div>
+          <h2>Skånes Dansteater</h2>
+          <p>Skånes Dansteater är en professionell danskompani som grundades 1965. Kompaniet är baserat i Malmö och är ett av Skandinaviens ledande danskompanier med en repertoar som omfattar en bred variation av dansstilar, från klassisk balett till modern dans och samtidskonst. Skånes Dansteater arbetar aktivt för att främja samarbeten mellan dans, musik, bildkonst och litteratur. Genom att samarbeta med både svenska och internationella konstnärer och koreografer skapar de innovativa och spännande produktioner som utmanar och inspirerar publiken. </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.skanesdansteater.se/">Dansteaterns webbsida</a></p>
+          <br>
+        </div>
+        <div class="col-sm-4">
+          <div class="kultur">
+            <img src="../static/malmö chokladfabrik.jpg">
+          </div>
+          <h2>Malmös Chokladfabrik</h2>
+          <p>Malmös Chokladfabrik är en chokladtillverkare och butik som ligger på Gamla Väster i Malmö. Här kan besökare köpa handgjorda praliner och choklad i olika smaker och former, som tillverkas av fina kakaobönor från hela världen. Det finns också möjlighet att boka chokladprovning och besöka fabrikens chokladverkstad för att lära sig mer om chokladtillverkning och smakupplevelser. Malmös Chokladfabrik har fått beröm för sin höga kvalitet och unika smaker och är ett populärt resmål för chokladälskare.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.malmochokladfabrik.se/">Malmö Chokladfabriks webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="dolda_pärlor">
+            <img src="../static/taproom.jpg">
+          </div>
+          <h2>Taproom</h2>
+          <p>Taproom Malmö är en ölbar belägen i hjärtat av Malmö, nära Möllevångstorget. Här kan besökare uppleva en bred samling av handgjorda ölsorter från svenska och internationella bryggerier, såväl som matiga tillbehör som passar utmärkt tillsammans med en kall öl. Taproom Malmö är en populär destination för ölentusiaster och har ett avslappnat och välkomnande atmosfär. De erbjuder också ölprovningar och andra evenemang med fokus på ölkultur.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://malmobrewing.com/">Taprooms webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="sport">
+            <img src="../static/victoriateatern.png">
+          </div>
+          <h2>Victoriateatern</h2>
+          <p>
+            Victoriateatern är en historisk teater i Malmö som grundades 1899. Den har varit en viktig plats för scenkonst och musik i staden i över 100 år och har genomgått flera renoveringar under åren för att bevara sin kulturhistoriska betydelse. Idag är Victoriateatern en populär plats för konserter, teaterföreställningar, stand-up comedy, klubbevenemang och andra kulturella evenemang. Teatern rymmer cirka 800 personer och har en intim atmosfär med en vacker och unik interiör. På Victoriateatern har många kända artister och band uppträtt genom åren, såsom The Beatles, Bob Dylan, Rolling Stones, David Bowie och många fler.</p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.victoria.se/sv">Victoriateaterns webbsida</a></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p>© 2023 Malmö Guiden</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
