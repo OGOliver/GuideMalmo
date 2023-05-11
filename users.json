@@ -1,0 +1,58 @@
+{
+    "exempel": "hejhej",
+    "aaa": {
+        "email": "aaa@mail.com",
+        "password": "ae5a4d22d54ae3cc13847aedf9af5c06510cdadd8374b862a436811745957fa0",
+        "salt": "randomstring"
+    },
+    "exampleuser": {
+        "email": "exampleuser@mail.com",
+        "password": "fa69143bdee1fc5e6fdc51cc9921cbec9d12b205b9394bb8ab460f0c3afc658a",
+        "salt": "randomstring"
+    },
+    "tjena": {
+        "email": "tjena@mail.se",
+        "password": "fa69143bdee1fc5e6fdc51cc9921cbec9d12b205b9394bb8ab460f0c3afc658a",
+        "salt": "randomstring"
+    },
+    "abc": {
+        "email": "abc@mail.com",
+        "password": "fa69143bdee1fc5e6fdc51cc9921cbec9d12b205b9394bb8ab460f0c3afc658a",
+        "salt": "randomstring"
+    },
+    "bbb": {
+        "email": "bbb@mail.com",
+        "password": "fa69143bdee1fc5e6fdc51cc9921cbec9d12b205b9394bb8ab460f0c3afc658a",
+        "salt": "randomstring"
+    },
+    "ttt": {
+        "email": "ttt@mail.com",
+        "password": "e8784504471dfecb1c351f99ae7da572e98e3fd4efc8774157e9d02bb244cecc",
+        "salt": "randomstring"
+    },
+    "lol36": {
+        "email": "Rasmus.pedersen200@gmail.com",
+        "password": "84f4bd08a5b8857d1466bf8fb65b850086280614c1f74fd6af74fe29b0e0a0b9",
+        "salt": "randomstring"
+    },
+    "abcde": {
+        "email": "abcde@gmail.com",
+        "password": "ae5a4d22d54ae3cc13847aedf9af5c06510cdadd8374b862a436811745957fa0",
+        "salt": "randomstring"
+    },
+    "ralle": {
+        "email": "ralle@mail.se",
+        "password": "4847a728e6812e5d5b0ca0dc1fa50a01bf760d4969c0e286a3e0c34f0d198b4e",
+        "salt": "randomstring"
+    },
+    "ZZZ": {
+        "email": "ZZZ@mail.se",
+        "password": "fa69143bdee1fc5e6fdc51cc9921cbec9d12b205b9394bb8ab460f0c3afc658a",
+        "salt": "randomstring"
+    },
+    "ppp": {
+        "email": "ppp@mail.se",
+        "password": "6d4fd5c1dcc2876be7d6df2d425ae5a9bd4a38221d32f56eef7a55c11294d4a4",
+        "salt": "randomstring"
+    }
+}
