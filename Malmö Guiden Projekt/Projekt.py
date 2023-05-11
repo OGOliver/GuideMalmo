@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path='/static')
 
 app = Flask(__name__)
 
-users = {}
+""" users = {} """
 
 @app.route('/')
 def home():
@@ -25,29 +25,31 @@ def register():
             return "Användarnamnet är upptaget"
     return render_template('register.html')
 
-def register_user(username, email, password, salt):
-    with open('static/users.json', 'r') as file:
+def register_user(username, email, hashed_password, salt):
+    """ global users """
+    with open('Malmö Guiden Projekt/static/users.json', 'r') as file:
         users = dict(json.load(file))
     if username in users:
         return False # användaren finns redan
-    hashed_password = hashlib.sha256((password + salt).encode('utf-8')).hexdigest()
     users[username] = {
         'email': email,
         'password': hashed_password,
         'salt': salt
     }
-    with open('static/users.json', 'w') as file:
+    with open('Malmö Guiden Projekt/static/users.json', 'w') as file:
         json.dump(users, file, indent=4)
     return True # användaren har registrerats
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    global users
+    """ global users """
     if request.method == 'POST':
         # Hämta användarnamn och lösenord från formuläret
         username = request.form['username']
         password = request.form['password']
 
+        with open('Malmö Guiden Projekt/static/users.json', 'r') as file:
+            users = dict(json.load(file))
         # Kontrollera om användarnamnet och lösenordet matchar en användare i JSON-filen
         if username in users and users[username]['password'] == hashlib.sha256((password + users[username]['salt']).encode('utf-8')).hexdigest():
             # Spara användarnamnet som en session-variabel och gå till startsidan
@@ -74,7 +76,7 @@ def dashboard():
     # Kontrollera om användaren är inloggad genom att kolla om session-variabeln är satt
     if 'username' in session:
         # Hämta användaruppgifter från JSON-filen
-        user = users[session['username']]
+        user = session['username']
         return render_template('dashboard.html', user=user)
     else:
         # Om användaren inte är inloggad, gå till inloggningssidan

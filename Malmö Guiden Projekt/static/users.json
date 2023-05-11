@@ -1,5 +1,4 @@
 {
-    "exempel": "hejhej",
     "aaa": {
         "email": "aaa@mail.com",
         "password": "ae5a4d22d54ae3cc13847aedf9af5c06510cdadd8374b862a436811745957fa0",
@@ -28,6 +27,11 @@
     "ttt": {
         "email": "ttt@mail.com",
         "password": "e8784504471dfecb1c351f99ae7da572e98e3fd4efc8774157e9d02bb244cecc",
+        "salt": "randomstring"
+    },
+    "saga": {
+        "email": "saga.a.c.norrman@gmail.com",
+        "password": "c4662a9bc69d588cf54c3e44d7eb4b3aad6fd8298bf9e47a5b98eaf6001ae735",
         "salt": "randomstring"
     }
 }

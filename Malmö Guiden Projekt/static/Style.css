@@ -1,5 +1,25 @@
 body {
-  background-color: rgb(214, 214, 214)!important;
+  background-color: var(--primary-color)!important;
+}
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+  --tri-color: rgb(98, 98, 98);
+  --quad-color: rgb(188, 188, 188);
+
+}
+
+.dark-theme{
+  --primary-color: #000106;
+  --secondary-color: #fff;
+  --tri-color: rgb(188, 188, 188);
+  --quad-color: rgb(98, 98, 98);
+}
+
+#icon{
+  width: 30px;
+  cursor: pointer;
 }
 
 .container {
@@ -17,14 +37,14 @@ body {
   background-position: center;
   border-radius: 0%!important;
   height: 450px!important;
-  border-color: white;
-  box-shadow: 0 4px 4px rgb(82, 82, 82);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 4px var(--tri-color);
   }
   .map{
     size:100%;
   }
 .btn-default {
-  background-color:#222!important;
+  background-color:var(--secondary-color)!important;
 }
 .main {
   margin-left: 2%;
@@ -37,6 +57,7 @@ h2 {
   font-weight: bold!important;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important;
   margin-left: 0.5%;
+  color: var(--secondary-color)!important;
 }
 .navbar {
   border-radius: 0%!important;
@@ -46,8 +67,8 @@ h2 {
 
 #regbutton .btn-default{
   margin-top: 10%;
-  color: white !important;
-  text-shadow: 2px 2px 2px rgb(109, 109, 109)!important;
+  color: var(--primary-color)!important;
+  text-shadow: 2px 2px 2px var(--tri-color)!important;
 }
 .background_reg {
   background-image: url('/static/register_bakgrund.jpeg');
@@ -56,11 +77,11 @@ h2 {
 }
 .form_reg {
   border-radius: 10%;
-  background-color: rgba(214, 214, 214, 0.8);
+  background-color: var(--quad-color);
   padding: 10%;
 }
 .btn-default {
-  color: white;
+  color: var(--primary-color);
 }
 .reg_container {
   margin-left: 1%;
@@ -70,10 +91,10 @@ h2 {
   
 }
 .custom-button {
-  background-color: rgb(214, 214, 214) !important;
+  background-color: var(--primary-color) !important;
 }
 .btn-default:hover {
-  background-color: white!important;
+  background-color: var(--primary-color)!important;
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   border-radius: 0%;
@@ -85,14 +106,15 @@ h2 {
   padding-top: 1.7%;
 }
 h1 {
-  color: rgb(255, 255, 255)!important;
+  color: var(--primary-color)!important;
   font-weight: 600!important;
-  text-shadow: 4px 4px 4px rgb(0, 0, 0)!important;
+  text-shadow: 4px 4px 4px var(--secondary-color)!important;
   font-family:Arial, Helvetica, sans-serif!important;
   padding-top: 5%;
 }
 p {
   margin-left: 0.5%!important;
+  color: var(--secondary-color)!important;
 }
 .restaurang img {
   width: 390px;
@@ -167,19 +189,19 @@ p {
 }
 
 h3 {
-  color: rgb(255, 255, 255)!important;
+  color:var(--primary-color)!important;
   font-weight: 600!important;
-  text-shadow: 4px 4px 4px rgb(0, 0, 0)!important;
+  text-shadow: 4px 4px 4px var(--secondary-color)!important;
 }
 
 a {
-  color: white !important;
-  text-shadow: 2px 2px 2px rgb(109, 109, 109)!important;
+  color: var(--primary-color) !important;
+  text-shadow: 2px 2px 2px var(--tri-color)!important;
 }
 a:hover {
-  background-color:rgb(255, 255, 255) !important;
-  color: black!important;
-  text-shadow: 1px 1px 1px rgb(138, 138, 138)!important;
+  background-color:var(--primary-color) !important;
+  color: var(--secondary-color)!important;
+  text-shadow: 1px 1px 1px var(--quad-color)!important;
   border-radius: 7.5%;
 }
 
