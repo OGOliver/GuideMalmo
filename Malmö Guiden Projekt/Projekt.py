@@ -91,6 +91,8 @@ def dashboard():
 def sevardheter():
     return render_template('sevardheter.html')
 
+
+
 @app.route('/boenden')
 def boenden():
     return render_template('boenden.html')
