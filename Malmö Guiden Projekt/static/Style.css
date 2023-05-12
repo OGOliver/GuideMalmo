@@ -52,7 +52,7 @@ body {
 
 .btn-default {
   background-color: var(--secondary-color) !important;
-  color: var(--secondary-color)!important;
+  color: var(--primary-color)!important;
 }
 
 .btn a{
