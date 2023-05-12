@@ -91,6 +91,21 @@ def dashboard():
 def sevardheter():
     return render_template('sevardheter.html')
 
+@app.route('/malmohuskarta')
+def malmohuskarta():
+    return render_template('malmohuskarta.html')
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @app.route('/boenden')
