@@ -9,7 +9,10 @@ body {
   margin-right: 0%!important;
   margin-left: 0%!important;
 }
-
+.textkontakt {
+  display: grid;
+  justify-content: center;
+}
 .jumbotron {
   background-image: url("../static/malmö.jpeg");
   background-size: cover;
