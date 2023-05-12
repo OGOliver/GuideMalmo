@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
-from flask_session import Session
 import json
 import hashlib
 
@@ -7,10 +6,10 @@ app = Flask(__name__, static_url_path='/static')
 
 app = Flask(__name__)
 
-app.config['SESSION_TYPE'] = 'filesystem'
-Session(app)
+"""app.config['SESSION_TYPE'] = 'filesystem'
+session(app)"""
 
-users = {}
+'''users = {}'''
 
 @app.route('/')
 def home():
@@ -29,39 +28,37 @@ def register():
             return "Användarnamnet är upptaget"
     return render_template('register.html')
 
-def register_user(username, email, password, salt):
-    with open('static/users.json', 'r') as file:
+def register_user(username, email, hashed_password, salt):
+    with open('Malmö Guiden Projekt/static/users.json', 'r') as file:
         users = dict(json.load(file))
     if username in users:
         return False # användaren finns redan
-    hashed_password = hashlib.sha256((password + salt).encode('utf-8')).hexdigest()
     users[username] = {
         'email': email,
         'password': hashed_password,
         'salt': salt
     }
-    with open('static/users.json', 'w') as file:
+    with open('Malmö Guiden Projekt/static/users.json', 'w') as file:
         json.dump(users, file, indent=4)
     return True # användaren har registrerats
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    with open('static/users.json', 'r') as file:
-        users = json.load(file)
-    
+    """ global users """
     if request.method == 'POST':
         # Hämta användarnamn och lösenord från formuläret
         username = request.form['username']
         password = request.form['password']
+        with open('Malmö Guiden Projekt/static/users.json', 'r') as file:
+            users = dict(json.load(file))
         
         # Kontrollera om användarnamnet och lösenordet matchar en användare i JSON-filen
         if username in users and users[username]['password'] == hashlib.sha256((password + users[username]['salt']).encode('utf-8')).hexdigest():
-            # Spara användarnamnet i sessionen och gå till startsidan
-            session['logged_in'] = True
+            # Spara användarnamnet som en session-variabel och gå till startsidan
             session['username'] = username
             return redirect(url_for('dashboard'))
         else:
-            # Om användarnamnet eller lösenordet är felaktigt, visar ett felmeddelande
+            # Om användarnamnet eller lösenordet är felaktigt, visa ett felmeddelande
             return render_template('login.html', error='Felaktigt användarnamn eller lösenord')
 
     return render_template('login.html')
@@ -81,7 +78,7 @@ def dashboard():
     # Kontrollera om användaren är inloggad genom att kolla om session-variabeln är satt
     if 'username' in session:
         # Hämta användaruppgifter från JSON-filen
-        user = users[session['username']]
+        user = session['username']
         return render_template('dashboard.html', user=user)
     else:
         # Om användaren inte är inloggad, gå till inloggningssidan
@@ -129,4 +126,4 @@ def kontakt():
 
 if __name__ == '__main__':
     app.secret_key = 'mysecretkey'
-    app.run(debug=True, port=5001)
+    app.run(debug=True)

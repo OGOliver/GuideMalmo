@@ -54,5 +54,10 @@
         "email": "ppp@mail.se",
         "password": "6d4fd5c1dcc2876be7d6df2d425ae5a9bd4a38221d32f56eef7a55c11294d4a4",
         "salt": "randomstring"
+    },
+    "hellohowareyou?": {
+        "email": "hey@gmail.se",
+        "password": "ac31f6ca43554f1f9d41bb8b29cc1c4fa52fe49b67338a73752b4db1f78276c4",
+        "salt": "randomstring"
     }
 }
