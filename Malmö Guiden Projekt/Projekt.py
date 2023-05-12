@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
-from flask_session import Session
 import json
 import hashlib
 
@@ -91,9 +90,7 @@ def dashboard():
 def sevardheter():
     return render_template('sevardheter.html')
 
-@app.route('/malmohuskarta')
-def malmohuskarta():
-    return render_template('malmohuskarta.html')
+
 
 
 
