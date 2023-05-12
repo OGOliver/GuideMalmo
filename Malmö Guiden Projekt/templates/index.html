@@ -25,7 +25,8 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">Kontakta oss</a></li>
+            <li class="navbar-left"><a href="{{ url_for('kontakt') }}"><span class="glyphicon glyphicon-user"></span>
+                Kontakta oss</a></li>
           </ul>
           <form class="navbar-form navbar-left">
             <div class="form-group">
@@ -34,16 +35,21 @@
             <button type="submit" class="btn btn-default custom-button">Sök</button>
           </form>
           <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-right"><a href="{{ url_for('register') }}"><span class="glyphicon glyphicon-user"></span> Registrera dig</a></li>
-            <li class="navbar-right"><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-user"></span> Logga in</a></li>
+            <li class="navbar-right"><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-user"></span>
+                Logga in</a></li>
           </ul>
         </div>
       </div>
+      <img src="static/moon.png" id="icon">
     </nav>
     <div class="jumbotron text-center">
-      <h1>Malmö Guiden</h1>
-      <h3>Upptäck Malmö med vår turistguide</h3>
+      <iframe class="map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=12.95644283294678%2C55.60555393225938%2C12.99661159515381%2C55.62089631976267&amp;layer=mapnik&amp;marker=55.61322587638706%2C12.976527214050293"
+        style="border: 1px solid black">
+      </iframe>
     </div>
+
+
     <div class="main">
       <div class="row">
         <div class="first_row">
@@ -130,7 +136,14 @@
       <p>© 2023 Malmö Guiden</p>
     </footer>
   </div>
+  <script>
+    var icon = document.getElementById("icon");
 
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+    }
+
+  </script>
 </body>
 
 </html>
