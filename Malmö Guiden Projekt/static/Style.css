@@ -22,6 +22,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .container {
   width: 100% !important;
   padding-left: 0% !important;
@@ -47,6 +49,11 @@ body {
 
 .btn-default {
   background-color: var(--secondary-color) !important;
+  color: var(--secondary-color)!important;
+}
+
+.btn a{
+  color: var(--primary-color)!important;
 }
 
 .main {
@@ -69,11 +76,13 @@ h2 {
   border-radius: 0% !important;
   margin-bottom: 0% !important;
   padding: 0.5%;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 #regbutton .btn-default {
   margin-top: 10%;
-  color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
   text-shadow: 2px 2px 2px var(--tri-color) !important;
 }
 
@@ -109,9 +118,18 @@ h2 {
   background-color: var(--primary-color) !important;
 }
 
+.navbar-brand > a{
+  color: var(--secondary-color);
+}
+
+.navbar-inverse,
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-radius: 0%;
+  border-color: var(--primary-color)!important;
+  color: var(--primary-color)!important;
+  background-color: var(--primary-color)!important;
+
 }
 
 .col-sm-4 {
@@ -129,10 +147,12 @@ h1 {
   font-family: Arial, Helvetica, sans-serif !important;
   padding-top: 5%;
 }
-
-p {
+div p{
+  color: var(--secondary-color);
+}
+p a {
   margin-left: 0.5% !important;
-  color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .restaurang img {
@@ -214,10 +234,15 @@ h3 {
   text-shadow: 4px 4px 4px var(--secondary-color) !important;
 }
 
+nav a{
+color: var(--secondary-color)!important;
+}
 a {
-  color: var(--primary-color) !important;
+  color: var(--secondary-color);
   text-shadow: 2px 2px 2px var(--tri-color) !important;
 }
+
+
 
 a:hover {
   background-color: var(--primary-color) !important;
