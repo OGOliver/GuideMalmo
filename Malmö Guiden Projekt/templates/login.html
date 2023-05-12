@@ -19,13 +19,12 @@
     <form action="/login" method="POST" class="mt-4">
         <div class="formlogin">
       <div class="form_reg">
-        <b><label for="username">E-postadress:</label></b>
+        <b><label for="username">Användarnamn:</label></b>
         <input type="text" class="form-control" id="username" name="username" required><br>
         <b><label for="password">Lösenord:</label></b>
         <input type="password" class="form-control" id="password" name="password" required>
         <div id="regbutton">
           <button type="submit" class="btn btn-default">Logga in</button>
-          <p>Har du Inget konto? <a href="{{ url_for('register') }}"> Registrera dig här</a></p>
         </div>
         </div>
       </div>

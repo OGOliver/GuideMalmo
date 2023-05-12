@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dolda pärlor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Malmö Guiden</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Kontakta oss</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Sök...">
+            </div>
+            <button type="submit" class="btn btn-default custom-button">Sök</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-right"><a href="#"><span class="glyphicon glyphicon-user"></span> Logga in</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Malmö Guiden</h1>
+      <h3>Upptäck Malmö med vår turistguide</h3>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="first_row">
+          <div class="col-sm-4">
+            <div class="Sevärdheter_Malmö">
+              <img src="../static/apoteketlejonet.jpg">
+            </div>
+            <h2>Apoteket Lejonet</h2>
+            <p>Apoteket Lejonet är en kulturskyddad byggnad i Malmö, belägen vid Södergatan och byggd i början av 1900-talet. Byggnaden har en anrik historia och fungerade som apotek fram till 1970-talet, varefter den användes för andra ändamål. På 2000-talet genomgick Apoteket Lejonet en omfattande renovering och återställdes till sitt ursprungliga skick. Idag är byggnaden hem för en restaurang och bar och är en populär mötesplats för både lokalbefolkning och besökare. Apoteket Lejonet är känt för sin vackra jugendarkitektur och är ett av Malmös mest ikoniska byggnadsverk.            </p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://www.apoteket.se/apotek/apoteket-lejonet-vetlanda/?gclid=Cj0KCQjwpPKiBhDvARIsACn-gzA13e9US11wv_fCF-FlJCHmnmyaHG11R_UH2h1lAjKQ0FhjESqTIK0aAubiEALw_wcB">Apoteket Lejonets webbsida</a></p>
+          </div>
+          <div class="col-sm-4">
+            <div class="Boenden">
+              <img src="../static/draken.jpg">
+            </div>
+            <h2>Draken</h2>
+            <p>Draken är en stor och imponerande graffitimålning som pryder ena sidan av P-huset vid Svävarvägen i Malmö. Målningen, som är över 40 meter lång och 11 meter hög, skapades av den svenska graffitikonstnären Finsta och hans team under Malmöfestivalen 2014. Målningen visar en stilig drake med färgglad och detaljrik textur, som omgärdas av moln och fjärilar. Draken är en populär syn i staden och är ett exempel på den spännande och levande gatukonstscenen i Malmö.            </p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://kulturinatur.blogspot.com/2014/05/anna-och-draken-i-malmo.html">Drakens webbsida</a></p>
+          </div>
+          <div class="col-sm-4">
+            <div class="restaurang">
+              <img src="../static/Thottska.jpg">
+            </div>
+            <h2>Thottska huset</h2>
+            <p>Thottska huset är en av Malmös mest kända byggnader och ligger på Stora Nygatan i Gamla stan. Huset uppfördes på 1840-talet och är känt för sin välbevarade exteriör och interiör i klassicistisk stil. Huset har en imponerande entréhall med en storslagen trappa och en salong med högt i tak och imponerande stuckaturer. Idag används huset för olika kulturella evenemang, utställningar och konferenser. Thottska huset är också känt för sin utsökta mat, vinbar och café med uteservering i en vacker innergård.            </p>
+            <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+            <p><a class="btn btn-default" href="https://sv.wikipedia.org/wiki/Thottska_huset">Thottska husets webbsida</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="shopping">
+            <img src="../static/drottningstorget.jpg">
+          </div>
+          <h2>Drottningstorget</h2>
+          <p>Drottningstorget är en stor och välkänd torg i centrala Malmö. Torget ligger vid Södra Förstadsgatan och korsningen med Amiralsgatan. Här finns flera kaféer, restauranger, butiker och andra företag, samt en populär marknad som hålls varje onsdag och lördag. Torget är också en viktig knutpunkt för kollektivtrafik i Malmö, med flera busslinjer och en spårvagnslinje som passerar genom området. På sommaren är torget ofta plats för evenemang och konserter, och det är en populär mötesplats för både turister och Malmöbor.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://sv.wikipedia.org/wiki/Drottningtorget,_Malm%C3%B6">Drottningstorgets webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="evenemang">
+            <img src="../static/östrakyrkogården.jpg">
+          </div>
+          <h2>Östra kyrkgården</h2>
+          <p>Östra kyrkogården är en av Malmös största begravningsplatser och ligger i stadsdelen Kirseberg. Den invigdes år 1891 och har sedan dess varit en viktig plats för många människors sista viloplats. Här finns över 70 000 gravar, inklusive flera välkända personligheter som konstnären Anders Zorn och skådespelaren Margaretha Krook. Östra kyrkogården är även en vacker park med många grönområden och vackra monument. Den används också som en plats för promenader och rekreation för besökare som söker lugn och ro.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.svenskakyrkan.se/malmokyrkogard/ostra-kyrkogarden">Östra krykogårdens webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="uteliv">
+            <img src="../static/teknikenochsjöfartenshus.jpg">
+          </div>
+          <h2>Tekniken och Sjöfartens hus</h2>
+          <p>Tekniken och Sjöfartens Hus är ett museum som ligger i Malmö och fokuserar på sjöfartens och teknikens historia. Museet öppnade sina dörrar 2010 och har en utställningsyta på cirka 2000 kvadratmeter. Här kan besökare lära sig om Malmös maritima historia, teknikens utveckling och hur människan har påverkat både havet och naturen. Museet har bland annat en interaktiv utställning om Öresundsbron, en modell av en ubåt och en samling av gamla motorer. Det är ett utmärkt ställe att besöka för både vuxna och barn som är intresserade av sjöfart och teknik.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://malmo.se/Uppleva-och-gora/Konst-och-museer/Malmo-museum/Besok-Malmo-museum/Vara-byggnader/Teknikens-och-sjofartens-hus.html">Tekniken och sjöfartens webbsida</a></p>
+          <br>
+        </div>
+        <div class="col-sm-4">
+          <div class="kultur">
+            <img src="../static/sofielundfolketshus.jpg">
+          </div>
+          <h2>Sofielund Folketshus</h2>
+          <p>Sofielund Folketshus är en kulturinstitution i Malmö som ligger i stadsdelen Sofielund. Huset är en plattform för kulturell mångfald och inkludering i samhället. Folketshuset har funnits sedan 1906 och har sedan dess varit en central plats för folkrörelser, kulturaktiviteter och politiska möten. Idag har man ett brett utbud av aktiviteter, workshops, konserter och föreställningar som sträcker sig över olika genrer och kulturer. Sofielund Folketshus är också en mötesplats för föreningsliv, där man kan hitta stöd och rådgivning för olika projekt och initiativ.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://sofielundfolketshus.se/">Sofielund Folketshus webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="dolda_pärlor">
+            <img src="../static/cafe6.jpg">
+          </div>
+          <h2>Café number 6</h2>
+          <p>Café Number 6 är ett mysigt café i hjärtat av Malmö. Här serveras ekologiskt och närproducerat kaffe från det lokala rosteriet Solde. Utöver kaffe kan man även njuta av olika sorters te, kakor och bakverk. Miljön är avslappnad och inbjudande med en hemtrevlig inredning och en trädgård att sitta i på sommaren. Caféet är även känt för sina olika evenemang, som poesikvällar och live-musik. Det är en populär träffpunkt för både lokalbefolkning och turister som söker en avkopplande och trevlig stund med något gott att äta eller dricka.          </p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.facebook.com/Cafe.number6/">Cafe number 6's webbsida</a></p>
+        </div>
+        <div class="col-sm-4">
+          <div class="sport">
+            <img src="../static/Falafel n.1.jpg">
+          </div>
+          <h2>Falafel Nr1</h2>
+          <p>
+            Falafel Nr1 är en välkänd matdestination i Malmö som specialiserar sig på att servera autentiskt och läckert mellanösterninspirerad mat. Det lilla stället har ett rykte om att erbjuda en av stadens bästa falafel och är känd för sina stora portioner och generösa tillbehör som hummus, tzatziki och baba ganoush. Menyn inkluderar också andra klassiska rätter som shawarma, kebab och grillade grönsaker. Falafel Nr1 erbjuder ofta snabb service och rimliga priser, vilket gör det till en populär destination bland både lokalbefolkningen och turister som letar efter en smakupplevelse utöver det vanliga.</p>
+          <p><a class="btn btn-default" href="...">Se på kartan</a></p>
+          <p><a class="btn btn-default" href="https://www.rosengardcentrum.se/utbud/falafel-nr-1/">Falafel nr1's webbsida</a></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p>© 2023 Malmö Guiden</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

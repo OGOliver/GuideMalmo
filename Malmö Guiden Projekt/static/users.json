@@ -1,4 +1,5 @@
 {
+    "exempel": "hejhej",
     "aaa": {
         "email": "aaa@mail.com",
         "password": "ae5a4d22d54ae3cc13847aedf9af5c06510cdadd8374b862a436811745957fa0",
@@ -29,9 +30,29 @@
         "password": "e8784504471dfecb1c351f99ae7da572e98e3fd4efc8774157e9d02bb244cecc",
         "salt": "randomstring"
     },
-    "saga": {
-        "email": "saga.a.c.norrman@gmail.com",
-        "password": "c4662a9bc69d588cf54c3e44d7eb4b3aad6fd8298bf9e47a5b98eaf6001ae735",
+    "lol36": {
+        "email": "Rasmus.pedersen200@gmail.com",
+        "password": "84f4bd08a5b8857d1466bf8fb65b850086280614c1f74fd6af74fe29b0e0a0b9",
+        "salt": "randomstring"
+    },
+    "abcde": {
+        "email": "abcde@gmail.com",
+        "password": "ae5a4d22d54ae3cc13847aedf9af5c06510cdadd8374b862a436811745957fa0",
+        "salt": "randomstring"
+    },
+    "ralle": {
+        "email": "ralle@mail.se",
+        "password": "4847a728e6812e5d5b0ca0dc1fa50a01bf760d4969c0e286a3e0c34f0d198b4e",
+        "salt": "randomstring"
+    },
+    "ZZZ": {
+        "email": "ZZZ@mail.se",
+        "password": "fa69143bdee1fc5e6fdc51cc9921cbec9d12b205b9394bb8ab460f0c3afc658a",
+        "salt": "randomstring"
+    },
+    "ppp": {
+        "email": "ppp@mail.se",
+        "password": "6d4fd5c1dcc2876be7d6df2d425ae5a9bd4a38221d32f56eef7a55c11294d4a4",
         "salt": "randomstring"
     }
 }
