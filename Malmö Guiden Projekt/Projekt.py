@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
-from flask_session import Session
 import json
 import hashlib
 
@@ -8,7 +7,7 @@ app = Flask(__name__, static_url_path='/static')
 app = Flask(__name__)
 
 app.config['SESSION_TYPE'] = 'filesystem'
-Session(app)
+session(app)
 
 '''users = {}'''
 
@@ -45,9 +44,7 @@ def register_user(username, email, hashed_password, salt):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    with open('static/users.json', 'r') as file:
-        users = json.load(file)
-    
+    """ global users """
     if request.method == 'POST':
         # Hämta användarnamn och lösenord från formuläret
         username = request.form['username']
@@ -57,12 +54,11 @@ def login():
         
         # Kontrollera om användarnamnet och lösenordet matchar en användare i JSON-filen
         if username in users and users[username]['password'] == hashlib.sha256((password + users[username]['salt']).encode('utf-8')).hexdigest():
-            # Spara användarnamnet i sessionen och gå till startsidan
-            session['logged_in'] = True
+            # Spara användarnamnet som en session-variabel och gå till startsidan
             session['username'] = username
             return redirect(url_for('dashboard'))
         else:
-            # Om användarnamnet eller lösenordet är felaktigt, visar ett felmeddelande
+            # Om användarnamnet eller lösenordet är felaktigt, visa ett felmeddelande
             return render_template('login.html', error='Felaktigt användarnamn eller lösenord')
 
     return render_template('login.html')
@@ -124,6 +120,10 @@ def dolda_parlor():
 def sport():
     return render_template('sport.html')
 
+@app.route('/kontakt')
+def kontakt():
+    return render_template('kontakt.html')
+
 if __name__ == '__main__':
     app.secret_key = 'mysecretkey'
-    app.run(debug=True, port=5001)
+    app.run(debug=True)
