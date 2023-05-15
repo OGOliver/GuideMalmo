@@ -59,5 +59,15 @@
         "email": "hey@gmail.se",
         "password": "ac31f6ca43554f1f9d41bb8b29cc1c4fa52fe49b67338a73752b4db1f78276c4",
         "salt": "randomstring"
+    },
+    "hejd\u00e5": {
+        "email": "hejd\u00e5@mail.se",
+        "password": "c8518f127d13186d37f11bfc2c7129b555c25ae91a5f3040efe07b6f9690bd88",
+        "salt": "randomstring"
+    },
+    "pop": {
+        "email": "pop@gmail.se",
+        "password": "c4662a9bc69d588cf54c3e44d7eb4b3aad6fd8298bf9e47a5b98eaf6001ae735",
+        "salt": "randomstring"
     }
 }
