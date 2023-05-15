@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, session
 import json
 import hashlib
 
@@ -7,7 +7,7 @@ app = Flask(__name__, static_url_path='/static')
 app = Flask(__name__)
 
 app.config['SESSION_TYPE'] = 'filesystem'
-Session(app)
+session(app)
 
 users = {}
 
