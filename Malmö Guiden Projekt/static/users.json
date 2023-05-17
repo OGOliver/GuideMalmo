@@ -59,5 +59,25 @@
         "email": "hey@gmail.se",
         "password": "ac31f6ca43554f1f9d41bb8b29cc1c4fa52fe49b67338a73752b4db1f78276c4",
         "salt": "randomstring"
+    },
+    "dfgh": {
+        "email": "asdfg",
+        "password": "96a920780d329798ab28d91ed61376f553934d6e9b3272dee6db12a1f39c1dae",
+        "salt": "randomstring"
+    },
+    "vb": {
+        "email": "asdfg",
+        "password": "2b12783ac85e9c5b0a32afb6d30094f41e02f8f00ad18e13ac623b28b5e14939",
+        "salt": "randomstring"
+    },
+    "j": {
+        "email": "fg",
+        "password": "e796cb58d3e83b27056e565209f0d633ad2e2f15e41f70fcec778cf25c9e0770",
+        "salt": "randomstring"
+    },
+    "saga": {
+        "email": "saga",
+        "password": "c4662a9bc69d588cf54c3e44d7eb4b3aad6fd8298bf9e47a5b98eaf6001ae735",
+        "salt": "randomstring"
     }
 }
