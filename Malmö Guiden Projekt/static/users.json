@@ -69,5 +69,10 @@
         "email": "pop@gmail.se",
         "password": "c4662a9bc69d588cf54c3e44d7eb4b3aad6fd8298bf9e47a5b98eaf6001ae735",
         "salt": "randomstring"
+    },
+    "l": {
+        "email": "l",
+        "password": "16fff74b4ada345823200c67b48f5d919407659ca19fd22d3ce107afbd046ccb",
+        "salt": "randomstring"
     }
 }
