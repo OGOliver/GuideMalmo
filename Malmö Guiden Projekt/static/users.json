@@ -74,10 +74,5 @@
         "email": "fg",
         "password": "e796cb58d3e83b27056e565209f0d633ad2e2f15e41f70fcec778cf25c9e0770",
         "salt": "randomstring"
-    },
-    "saga": {
-        "email": "saga",
-        "password": "c4662a9bc69d588cf54c3e44d7eb4b3aad6fd8298bf9e47a5b98eaf6001ae735",
-        "salt": "randomstring"
     }
 }
