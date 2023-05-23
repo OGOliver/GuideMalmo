@@ -74,5 +74,10 @@
         "email": "l",
         "password": "16fff74b4ada345823200c67b48f5d919407659ca19fd22d3ce107afbd046ccb",
         "salt": "randomstring"
+    },
+    "Cliff": {
+        "email": "elliotwat0290@gmail.com",
+        "password": "5dfc84ad815b9767628b604c95e309bc1a088c0afd5119faa5e06a2d3b6203cd",
+        "salt": "randomstring"
     }
 }
