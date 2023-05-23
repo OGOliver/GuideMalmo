@@ -119,6 +119,10 @@ def sport():
 def kontakt():
     return render_template('kontakt.html')
 
+@app.route('/profil')
+def profil():
+    return render_template('profil.html')
+
 if __name__ == '__main__':
     app.secret_key = 'mysecretkey'
     app.run(debug=True)
