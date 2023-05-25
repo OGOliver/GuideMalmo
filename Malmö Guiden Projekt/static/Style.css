@@ -35,13 +35,14 @@ body {
   display: grid;
   justify-content: center;
 }
-.jumbotron {
+.jumbotron text-center > img{
 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0% !important;
-  height: 450px !important;
+  height: 500px !important; 
+  
   border-color: var(--primary-color);
   box-shadow: 0 4px 4px var(--tri-color);
 }
