@@ -31,33 +31,54 @@ body {
   margin-right: 0% !important;
   margin-left: 0% !important;
 }
+
 .textkontakt {
   display: grid;
   justify-content: center;
 }
-.jumbotron text-center > img{
 
+.jumbotron {
+  text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0% !important;
-  height: 500px !important; 
-  
+  background-image: url(malmö.jpeg);
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+
   border-color: var(--primary-color);
   box-shadow: 0 4px 4px var(--tri-color);
 }
 
-.map {
-  size: 100%;
+.malmö {
+  width: 100%;
+  height: 500px;
+  display: block;
+  align-content: center;
+
+
+
 }
+
+.bigmap {
+  background-image: url(https://www.openstreetmap.org/export/embed.html?bbox=12.95644283294678%2C55.60555393225938%2C12.99661159515381%2C55.62089631976267&amp;layer=mapnik&amp;marker=55.61322587638706%2C12.976527214050293);
+  
+
+
+  width: 800px;
+}
+
 
 .btn-default {
   background-color: var(--secondary-color) !important;
-  color: var(--primary-color)!important;
+  color: var(--primary-color) !important;
 }
 
-.btn a{
-  color: var(--primary-color)!important;
+.btn a {
+  color: var(--primary-color) !important;
 }
 
 .main {
@@ -122,7 +143,7 @@ h2 {
   background-color: var(--primary-color) !important;
 }
 
-.navbar-brand > a{
+.navbar-brand>a {
   color: var(--secondary-color);
 }
 
@@ -130,9 +151,9 @@ h2 {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-radius: 0%;
-  border-color: var(--primary-color)!important;
-  color: var(--primary-color)!important;
-  background-color: var(--primary-color)!important;
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
 
 }
 
@@ -151,9 +172,11 @@ h1 {
   font-family: Arial, Helvetica, sans-serif !important;
   padding-top: 5%;
 }
-div p{
+
+div p {
   color: var(--secondary-color);
 }
+
 p a {
   margin-left: 0.5% !important;
   color: var(--primary-color) !important;
@@ -238,9 +261,10 @@ h3 {
   text-shadow: 4px 4px 4px var(--secondary-color) !important;
 }
 
-nav a{
-color: var(--secondary-color)!important;
+nav a {
+  color: var(--secondary-color) !important;
 }
+
 a {
   color: var(--secondary-color);
   text-shadow: 2px 2px 2px var(--tri-color) !important;
