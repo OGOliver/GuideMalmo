@@ -79,5 +79,15 @@
         "email": "elliotwat0290@gmail.com",
         "password": "5dfc84ad815b9767628b604c95e309bc1a088c0afd5119faa5e06a2d3b6203cd",
         "salt": "randomstring"
+    },
+    "rasmusflickv\u00e4n": {
+        "email": "jag\u00e4renliten@bajskorv.com",
+        "password": "288eb8bdbcc26465d1338d2832ed7a208fa885da9533803793d6294008d0d9d4",
+        "salt": "randomstring"
+    },
+    "kuk": {
+        "email": "kuk",
+        "password": "7974a3f26c4e7109fd7339f0eeaea091dbebf176ac6bec31bf3d76911170377c",
+        "salt": "randomstring"
     }
 }

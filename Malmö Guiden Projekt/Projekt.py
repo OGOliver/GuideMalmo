@@ -3,15 +3,29 @@ import json
 import hashlib
 
 app = Flask(__name__, static_url_path='/static')
-
-app = Flask(__name__)
+"""
+Skapar en Flask-applikationsinstans med det aktuella namnet (__name__) och en anpassad sökväg för statiska filer (/static).
+"""
 
 @app.route('/')
 def home():
+    """
+    Visar index sidan
+    """
     return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    """
+    Hanterar registreringsprocessen för användare.
+
+    GET-metod: Visar registreringsformuläret.
+    POST-metod: Tar emot registreringsuppgifter, validerar och sparar användaren i databasen.
+
+    Returns:
+        Vid framgång: Omdirigerar till startsidan.
+        Vid fel: Visar felmeddelande om att användarnamnet är upptaget.
+    """
     if request.method == 'POST':
         username = request.form['username']
         email = request.form['email']
@@ -24,10 +38,26 @@ def register():
     return render_template('register.html')
 
 def register_user(username, email, hashed_password, salt):
+    """
+    Registrerar en användare genom att spara deras uppgifter i en JSON-fil.
+
+    Args:
+        username (str): Användarnamn för den registrerade användaren.
+        email (str): E-postadress för den registrerade användaren.
+        hashed_password (str): Hashat lösenord för den registrerade användaren.
+        salt (str): Salt-värde för att användas vid lösenordshantering.
+
+    Returns:
+        bool: True om användaren registrerades framgångsrikt, annars False om användarnamnet redan existerar.
+
+    Side Effects:
+        Sparar användarens uppgifter i en JSON-fil.
+
+    """
     with open('Malmö Guiden Projekt/static/users.json', 'r') as file:
         users = dict(json.load(file))
     if username in users:
-        return False # användaren finns redan
+        return False  # Användaren finns redan
     users[username] = {
         'email': email,
         'password': hashed_password,
@@ -35,7 +65,7 @@ def register_user(username, email, hashed_password, salt):
     }
     with open('Malmö Guiden Projekt/static/users.json', 'w') as file:
         json.dump(users, file, indent=4)
-    return True # användaren har registrerats
+    return True  # Användaren har registrerats
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -81,48 +111,97 @@ def dashboard():
 
 @app.route('/sevardheter')
 def sevardheter():
+    """
+    Visar sidan för sevärdheter.
+    """
     return render_template('sevardheter.html')
+
 
 @app.route('/boenden')
 def boenden():
+    """
+    Visar sidan för boenden.
+    """
     return render_template('boenden.html')
+
 
 @app.route('/restauranger')
 def restauranger():
+    """
+    Visar sidan för restauranger.
+    """
     return render_template('restauranger.html')
+
 
 @app.route('/shopping')
 def shopping():
+    """
+    Visar sidan för shopping.
+    """
     return render_template('shopping.html')
+
 
 @app.route('/evenemang')
 def evenemang():
+    """
+    Visar sidan för evenemang.
+    """
     return render_template('evenemang.html')
+
 
 @app.route('/uteliv')
 def uteliv():
+    """
+    Visar sidan för uteliv.
+    """
     return render_template('uteliv.html')
+
 
 @app.route('/kultur')
 def kultur():
+    """
+    Visar sidan för kultur.
+    """
     return render_template('kultur.html')
+
 
 @app.route('/dolda-parlor')
 def dolda_parlor():
+    """
+    Visar sidan för dolda pärlor.
+    """
     return render_template('dolda_parlor.html')
+
 
 @app.route('/sport')
 def sport():
+    """
+    Visar sidan för sport.
+    """
     return render_template('sport.html')
+
 
 @app.route('/kontakt')
 def kontakt():
+    """
+    Visar kontaktsidan.
+    """
     return render_template('kontakt.html')
+
 
 @app.route('/profil')
 def profil():
+    """
+    Visar profilsidan.
+    """
     return render_template('profil.html')
 
 if __name__ == '__main__':
     app.secret_key = 'mysecretkey'
     app.run(debug=True)
+    """
+    Startar applikationen och kör den lokalt vid direktkörning av denna fil.
+    'secret_key' används för att signera sessionsdata och bör bytas till en säker nyckel i produktion.
+    Debug-läge är aktiverat för att visa felmeddelanden och uppdatera servern vid ändringar.
+    """
+
